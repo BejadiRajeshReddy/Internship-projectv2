@@ -3,6 +3,18 @@
   line-height: 1.5;
   font-weight: 400;
   --bg: #f7f7f7;
+  --btn: #535bf2;
+  --grad: linear-gradient(135deg, var(--primary), var(--secondary));
+  --primary: #3498db;
+  --secondary: #2c3e50;
+  --accent: #e74c3c;
+  --background: #ecf0f1;
+  --text: #34495e;
+  --transition: all 0.3s ease-in-out;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body::-webkit-scrollbar {
@@ -18,7 +30,7 @@ body::-webkit-scrollbar {
 }
 
 a {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 500;
   color: #646cff;
   text-decoration: inherit;
