@@ -376,14 +376,6 @@ function App() {
     document.querySelector("#apply").scrollIntoView({ behavior: "smooth" });
   };
 
-  // const nextSlide = useCallback(() => {
-  //   setCurrentIndex((prevIndex) => {
-  //     if (prevIndex >= domains.length - 3) {
-  //       return 0;
-  //     }
-  //     return prevIndex + 1;
-  //   });
-  // }, [domains.length]);
 
   const nextSlide = useCallback(() => {
     setCurrentIndex((prevIndex) => {
