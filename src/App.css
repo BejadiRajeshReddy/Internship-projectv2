@@ -341,7 +341,7 @@ main h1 {
 
 .upload-zone:hover,
 .upload-zone.dragging {
-  border-color: #2563eb;
+  /* border-color: #2563eb; */
   background-color: #f0f7ff;
 }
 
@@ -522,7 +522,6 @@ img {
     flex: 0 0 100%;
     margin-bottom: 1rem;
   }
-
 
   .carousel-button {
     display: none;
