@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@400;500&family=Inter:wght@400;500&display=swap");
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -8,9 +10,12 @@
   --primary: #3498db;
   --secondary: #2c3e50;
   --accent: #e74c3c;
-  --background: #ecf0f1;
+  --background: rgba(245, 245, 243, 0.95);
   --text: #34495e;
   --transition: all 0.3s ease-in-out;
+  --color-dark: #1c1c1c;
+  --color-accent: #f7e353;
+  --transition-standard: 0.3sease;
 }
 
 html {
@@ -27,6 +32,18 @@ body::-webkit-scrollbar {
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Fraunces", serif;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  color: var(--color-dark);
 }
 
 a {

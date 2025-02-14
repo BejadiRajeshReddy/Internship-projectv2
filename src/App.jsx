@@ -376,7 +376,6 @@ function App() {
     document.querySelector("#apply").scrollIntoView({ behavior: "smooth" });
   };
 
-
   const nextSlide = useCallback(() => {
     setCurrentIndex((prevIndex) => {
       if (prevIndex >= domains.length - cardsVisible) {
@@ -403,7 +402,7 @@ function App() {
         setCardsVisible(3);
       }
     };
-  
+
     updateCardsVisible();
     window.addEventListener("resize", updateCardsVisible);
     return () => window.removeEventListener("resize", updateCardsVisible);
@@ -430,13 +429,14 @@ function App() {
           <button onClick={scrollToForm}>Apply</button>
         </nav>
         <div className="hero">
+        <span className="tag-label">WELCOME TO TECHSPIRA</span>
           <h1>
             We help interns to work <br />
             their way to the stars
           </h1>
           <p>Join TechSpira and launch your career in technology</p>
           <button id="about">
-            <a href="#apply">Start Your Journey</a>
+            <a href="#apply">Start Your Journey →</a>
           </button>
         </div>
       </header>
@@ -466,7 +466,11 @@ function App() {
           <div className="carousel">
             <div
               className="domain-grid"
-              style={{ transform: `translateX(-${currentIndex * (100 / cardsVisible)}%)` }}
+              style={{
+                transform: `translateX(-${
+                  currentIndex * (100 / cardsVisible)
+                }%)`,
+              }}
               onMouseEnter={() => setPaused(true)}
               onMouseLeave={() => setPaused(false)}
             >
@@ -518,7 +522,7 @@ function App() {
                   type="email"
                   name="email"
                   className="form-input"
-                  placeholder="john@example.com"
+                  placeholder="techspira@example.com"
                   required
                 />
               </div>
