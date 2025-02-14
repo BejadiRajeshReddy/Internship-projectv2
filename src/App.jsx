@@ -453,7 +453,7 @@ function App() {
           Under the leadership of our visionary directors, we strive to create
           an environment where creativity meets technology, empowering both
           organizations and aspiring professionals to excel. With a robust
-          foundation, a team of 50–100 dedicated professionals, and an
+          foundation, a team of 50-100 dedicated professionals, and an
           unwavering commitment to quality, TechSpira Technologies is not just a
           company—it&apos;s a launchpad for technological innovation and
           professional growth.
