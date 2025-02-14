@@ -296,7 +296,7 @@
 
 import "./App.css";
 import { useState, useEffect, useCallback, useRef } from "react";
-import logo from "./assets/T-logo.png";
+import Img from "../src/assets/image.js";
 
 function App() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -311,51 +311,51 @@ function App() {
     {
       name: "Full-Stack Development",
       description: "Build both frontend and backend for applications",
-      img: "https://img-c.udemycdn.com/course/480x270/4505104_8592_8.jpg",
+      image: Img.full,
     },
     {
       name: "Frontend Development",
       description:
         "Create visually stunning and user-friendly interfaces (React, Angular, Vue.js)",
-      img: "https://devsarticles.com/wp-content/uploads/2024/01/front-end-Roadmap.png",
+      image: Img.front,
     },
     {
       name: "Backend Development",
       description:
         "Build the server-side and APIs that power applications (Node.js, Python, Java, PHP)",
-      img: "https://i0.wp.com/plopdo.com/wp-content/uploads/2021/10/What-is-back-end-development-2.jpg?fit=805%2C428&ssl=1",
+      image: Img.back,
     },
     {
       name: "Software Development",
       description: "Build next-gen applications and services",
-      img: "https://www.jagathinetwork.com/wp-content/uploads/2024/11/data-analytics.jpg",
+      image: Img.software,
     },
     {
       name: "Cloud Computing",
       description:
         "Leverage cloud platforms for scalable and reliable solutions (AWS, Azure, Google Cloud)",
-      img: "https://s3-ap-south-1.amazonaws.com/ricedigitals3bucket/AUPortalContent/2021/08/12060931/Untitled-design-88.png",
+      image: Img.cloud,
     },
     {
       name: "UI/UX Design",
       description:
         "Design engaging user interfaces and optimize user experiences",
-      img: "https://www.aufaitux.com/wp-content/uploads/2020/05/UIUX-designing-1.jpg",
+      image: Img.UX,
     },
     {
       name: "DevOps & Automation",
       description: "Automate workflows and improve software delivery processes",
-      img: "https://eu-images.contentstack.com/v3/assets/blt31d6b0704ba96e9d/blt56ee1fd96188b7b1/63abea3d4ef82f4d1052c97c/GettyImages-1161702497.jpg?width=1280&auto=webp&quality=95&format=jpg&disable=upscale",
+      image: Img.devops,
     },
     {
       name: "Networking & IT Support",
       description: "Ensure seamless IT infrastructure and troubleshooting",
-      img: "https://www.onpartech.com/wp-content/uploads/2022/03/Network-Support-Services-In-The-United-States.jpg",
+      image: Img.network,
     },
     {
       name: "Database Management & SQL",
       description: "Manage and query databases for data-driven applications",
-      img: "https://optim.tildacdn.one/tild6262-6661-4034-b164-383063636462/-/resize/824x/-/format/webp/What_is_SQL_Database.png",
+      image: Img.sql,
     },
   ];
 
@@ -413,7 +413,7 @@ function App() {
       <header>
         <nav>
           <a href="#">
-            <img src={logo} alt="TechSpira Logo" />
+            <img src={Img.logo} alt="TechSpira Logo" />
           </a>
           <ul>
             <li>
@@ -429,7 +429,7 @@ function App() {
           <button onClick={scrollToForm}>Apply</button>
         </nav>
         <div className="hero">
-        <span className="tag-label">WELCOME TO TECHSPIRA</span>
+          <span className="tag-label">WELCOME TO TECHSPIRA</span>
           <h1>
             We help interns to work <br />
             their way to the stars
@@ -476,7 +476,7 @@ function App() {
             >
               {domains.map((domain, index) => (
                 <div key={`${domain.name}-${index}`} className="card">
-                  <img src={domain.img} alt={domain.name} />
+                  <img src={domain.image} alt={domain.name} />
                   <h3>{domain.name}</h3>
                   <p>{domain.description}</p>
                 </div>
